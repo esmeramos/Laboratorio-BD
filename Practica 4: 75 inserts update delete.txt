@@ -1,27 +1,27 @@
 use bdMuebleria
 
 insert into MetodoEnvio
-values (03, 'Est·ndar', 'Entrega entre 3-5 dÌas h·biles')
+values (03, 'Est√°ndar', 'Entrega entre 3-5 d√≠as h√°biles')
 insert into MetodoEnvio
-values (02, 'Dos dias', 'Entrega en 2 dÌas h·biles')
+values (02, 'Dos dias', 'Entrega en 2 d√≠as h√°biles')
 insert into MetodoEnvio
-values (01, 'Un dÌa', 'Entrega en 1 dÌa h·bil')
+values (01, 'Un d√≠a', 'Entrega en 1 d√≠a h√°bil')
 insert into Departamento
-values(100, 'LÌnea Blanca')
+values(100, 'L√≠nea Blanca')
 insert into Departamento
-values(101, 'ElectrodomÈsticos')
+values(101, 'Electrodom√©sticos')
 insert into Departamento
-values(102, 'CÛmputo y ElectrÛnica')
+values(102, 'C√≥mputo y Electr√≥nica')
 insert into Departamento
 values(103, 'Juguetes')
 insert into Departamento
 values(104, 'Celulares')
 insert into Departamento
-values(105, 'DecoraciÛn')
+values(105, 'Decoraci√≥n')
 insert into Departamento
 values(106, 'Patio')
 insert into Departamento
-values(107, 'BaÒo')
+values(107, 'Ba√±o')
 insert into Departamento
 values(108, 'Cocina')
 insert into Area_Trabajo 
@@ -38,13 +38,13 @@ insert into Pago
 values (200, 'Efectivo')
 
 insert into Pago
-values (201, 'Tarjeta de dÈbito')
+values (201, 'Tarjeta de d√©bito')
 
 insert into Pago
-values (202, 'Tarjeta de crÈdito')
+values (202, 'Tarjeta de cr√©dito')
 
 insert into Turno
-values (001, 'DÌa', '8:00', '17:00')
+values (001, 'D√≠a', '8:00', '17:00')
 
 insert into Turno 
 values (002, 'Tarde', '13:00', '22:00')
@@ -68,7 +68,7 @@ insert into CodigoPostal
 values (52300)
 
 insert into Estado
-values (30, 'Nuevo LeÛn', 64102)
+values (30, 'Nuevo Le√≥n', 64102)
 
 insert into Estado
 values (31, 'Jalisco', 44970)
@@ -118,7 +118,7 @@ insert into Direccion
 values (300,'1031 C', 'Escarola', 500, 50, 30, 64102)
 
 insert into Direccion
-values (301,'2024', 'JosÈ Alcal·', 501, 51, 31, 44970)
+values (301,'2024', 'Jos√© Alcal√°', 501, 51, 31, 44970)
 
 insert into Direccion
 values (302,'1243', 'Calle 6 Nte', 502, 52, 32, 72000)
@@ -213,14 +213,14 @@ values(1,'Elemental Soluciones', 6, 300, 12)
 Insert into Proveedor 
 values(2,'Leo Albert', 1, 301, 13)
 Insert into Cliente values
-('1', 'Rocio Esmeralda','Ramos','NiÒo', 302, 1, 2, 1 )
+('1', 'Rocio Esmeralda','Ramos','Ni√±o', 302, 1, 2, 1 )
 
 Insert into Articulo(id_articulo, Descripcion, id_depto, id_prov) 
 values (52928255, 'Hot Wheels Super Ultimate Garage Play Set',103, 1 )
 Insert into Articulo(id_articulo, Descripcion, id_depto, id_prov) 
 values (39344776, 'Celebrate Halloween Together Black Cat Soap Pump',107, 1 )
 Insert into Articulo(id_articulo, Descripcion, id_depto, id_prov) 
-values (10419668, 'Refrigerador Mabe 18 pies c˙bicos acero',100, 2 )
+values (10419668, 'Refrigerador Mabe 18 pies c√∫bicos acero',100, 2 )
 
 Insert into ListadePrecios values
 (701046,52928255, 400, '10/11/2018', '11/10/2019')
@@ -234,7 +234,7 @@ Insert into Empleado values
 Insert into Empleado values
 (1917540, 'Perla', 'Hernandez', 'Cupertino', 23, 22, '08/05/16', null, 1, 521)
 Insert into Empleado values
-(1925368, 'Rosie', 'Gomez', 'SaldaÒa', 20, 23, '09/04/17', null, 1, 521)
+(1925368, 'Rosie', 'Gomez', 'Salda√±a', 20, 23, '09/04/17', null, 1, 521)
 Insert into Empleado values
 (1985463, 'Eduardo', 'Lopez', 'Perez', 27, 24, '07/08/13', null, 2, 521)
 Insert into Empleado values
