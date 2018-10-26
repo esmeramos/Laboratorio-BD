@@ -21,6 +21,14 @@ Select fecha_ingreso from Empleado as e where e.fecha_ingreso<'20130101'
 
 
 --Vistas
+
+Create view Vista_Articulo_Precio
+AS
+Select Articulo.id_articulo, Descripcion, precio_u 
+FROM Articulo INNER JOIN ListadePrecios ON Articulo.id_articulo=ListadePrecios.id_articulo
+WHERE ListadePrecios.precio_u>=500
+Select * from Vista_Articulo_Precio
+
 Create view Vista_Articulo_Depto
 AS
 Select id_articulo, Descripcion, Articulo.id_depto, Nombre_Depto
@@ -31,7 +39,7 @@ Select * from Vista_Articulo_Depto
 Create view Vista_Clientes_Edo
 AS
 Select Nombre+ ' '+ Ap_paterno+' ' + Ap_materno as NombreCompleto,
-Calle+' '+numero as Dirección
+Calle+' '+numero as DirecciÃ³n
 FROM Cliente INNER JOIN Direccion on Cliente.id_direccion=Direccion.id_direccion
 INNER JOIN Estado ON Estado.id_estado=Direccion.id_estado
 WHERE Direccion.id_estado=30
